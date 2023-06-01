@@ -18,100 +18,121 @@ function App() {
         <Navbar className=""/>
       </header>
 
-      <div className="main">
-        <div className='main-info'>
+      <div className="main col-12 margin-block" style={{ 
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/images/landing-gerl.png'})` 
+      }}>
+        <div className='main-info col-12 col-md-6'>
           <h1>ТАЙНЫЙ ПОКУПАТЕЛЬ</h1>
           <h3>Твоя возможность оценивать заведения города!</h3>
           <p>Главная цель путеводителя - выделить те заведения в городе,
             которые топят за качество, сервис и дорожат своими клиентами.
           </p>
 
-          <button className="btn btn-primary">
+          <button >
             Подробнее
           </button>
         </div>
         
       </div>
 
-      <div className="description">
-        <h3>3RAZA - это путеводитель проверенных заведений 
-        позволяющий отделить из общего списка те заведения, которые дорожат своими гостями
-        и держат планку качества на высоком уровне.</h3>
+      <div className="description margin-block">
+        
+        <h3>3RAZA - это путеводитель проверенных заведений позволяющий отделить <br />
+        из общего списка те заведения, которые дорожат своими гостями и держат планку качества на высоком уровне.</h3>
+        
       </div>
 
-      <div className="shopper" >
+      <div className="shopper margin-block pt-5" >
         <div className='header-block'>
           <h2>
             Зачем становиться
+            <br />
             <strong> тайным покупателем?</strong>
           </h2>
         </div>
 
-        <div className='d-flex col-12 justify-content-between'>
-
-          <div className='shopper-block'>
-            <img src={process.env.PUBLIC_URL + "/images/landing-heads.png"} alt="Ощути себя в новой роли" />
-            <h3>Ощути себя в новой роли</h3>
-            <p>ты сможешь оценить его по многим параметрам и помочь остальным в выборе лучшего</p>
+        <div className='d-flex col-12 justify-content-center justify-content-xl-between flex-wrap margin-block'>
+          <div className='p-2 col-12 col-md-6 col-xl-4 d-flex justify-content-center'>
+            <div className='shopper-block '>
+              <img src={process.env.PUBLIC_URL + "/images/landing-heads.png"} alt="Ощути себя в новой роли" />
+              <h3>Ощути себя в новой роли</h3>
+              <p>ты сможешь оценить его по многим параметрам и помочь остальным в выборе лучшего</p>
+            </div>
           </div>
-
-          <div className='shopper-block'>
-            <img src={process.env.PUBLIC_URL + "/images/landing-money.png"} alt="Получи кэшбэк 70%" />
-            <h3>Получи кэшбэк 70%</h3>
-            <p>от среднего чека, посетив заведение и написав отзыв</p>
+          
+          <div className='p-2 col-12 col-md-6 col-xl-4 d-flex justify-content-center'>
+            <div className='shopper-block'>
+              <img src={process.env.PUBLIC_URL + "/images/landing-money.png"} alt="Получи кэшбэк 70%" />
+              <h3>Получи кэшбэк 70%</h3>
+              <p>от среднего чека, посетив заведение и написав отзыв</p>
+            </div>
           </div>
-
-          <div className='shopper-block'>
-            <img src={process.env.PUBLIC_URL + "/images/landing-rocket.png"} alt="Эксклюзивные скидки" />
-            <h3>Эксклюзивные скидки</h3>
-            <p>для тайных покупателей от различных заведений города</p>
+          
+          <div className='p-2 col-12 col-md-6 col-xl-4 d-flex justify-content-center'>
+            <div className='shopper-block'>
+              <img src={process.env.PUBLIC_URL + "/images/landing-rocket.png"} alt="Эксклюзивные скидки" />
+              <h3>Эксклюзивные скидки</h3>
+              <p>для тайных покупателей от различных заведений города</p>
+            </div>
           </div>
+          
         </div>
       </div>
 
-      <div className="register" >
-        <div className='header-block'>
+      <div className="register margin-block pt-5" >
+        <div className='header-block d-flex flex-column align-items-center mb-5'>
           <h2>
             Как стать тайным покупателем?
+            <br />
             <strong>Регистрация</strong>
           </h2>
 
-          <button className="btn btn-primary">
-            Начать
-          </button>
+          <a href="https://3raza.com" rel="noreferrer" target="_blank">
+            <button className="btn btn-primary">
+              Начать
+            </button>
+          </a>
+          
         </div>
 
-        <div className='d-flex col-12 justify-content-between'>
+        <div className='d-flex col-12 justify-content-between flex-wrap'>
 
-          <div className='register-block'>
-            <p>1. Зайди на <a href="https://3raza.com" rel="noreferrer" target="_blank">3raza.com</a>
-              <br />
-              Выбирай "Войти"
-            </p>
+          <div className='register-block col-12 col-md-6 col-xl-4'>
+            <ol>
+              <li>Зайди на <a href="https://3raza.com" rel="noreferrer" target="_blank">3raza.com</a>
+                <br />
+                Выбирай "Войти"
+              </li>
+            </ol>
 
             <div className='register-block-start'>
               <img src={process.env.PUBLIC_URL + "/images/landing-startpage.png"} alt="Главная страница 3RAZA" />
             </div>
           </div>
 
-          <div className='register-block '>
-            <p>2. Жми "Зарегистрироваться".
-              <br />
-              Выбирай "Пользователь".
-            </p>
+          <div className='register-block col-12 col-md-6 col-xl-4'>
+            <ol start={2}>
+              <li>Жми "Зарегистрироваться".
+                <br />
+                Выбирай "Пользователь".
+              </li>
+            </ol>
+            
 
             <div className='register-block-center'>
               <img src={process.env.PUBLIC_URL + "/images/landing-register.png"} alt="Регистрация на сайте" />
             </div>
           </div>
 
-          <div className='register-block'>
-            <p>3. Смотри видео с инструкцией.
-              <br />
-              Введи данные и следуй
-              <br />
-              инструкции на сайте.
-            </p>
+          <div className='register-block col-12 col-md-6 col-xl-4'>
+            <ol start={3}>
+              <li>Смотри видео с инструкцией.
+                <br />
+                Введи данные и следуй
+                <br />
+                инструкции на сайте.
+              </li>
+            </ol>
 
             <div className='register-block-end'>
               <img src={process.env.PUBLIC_URL + "/images/landing-video.png"} alt="Видео с инструкцией" />
@@ -122,7 +143,7 @@ function App() {
 
       </div>
 
-      <div className="commands">
+      <div className="commands margin-block">
         <div className='commands-info'>
           <h1>Наша команда</h1>
           <h3>Если остались вопросы</h3>
@@ -135,7 +156,7 @@ function App() {
         
       </div>
 
-      <footer>
+      <footer >
         <ul>
           {renderMenu}
         </ul>

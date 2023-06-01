@@ -1,10 +1,96 @@
 .App {
-  text-align: center;
+  background-color: #f1dfc5ba;
+  padding: 0 5%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main {
+  background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.main-info h1{
+  font-size: 88px;
+    color: #f17878;
+    line-height: 85px;
+}
+
+.main-info h3{
+  display: block;
+    max-width: 424px;
+    font-weight: bold;
+}
+
+.main-info p{
+  display: block;
+    max-width: 300px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.main-info button, .register button{
+  font-weight: 500;
+    background-color: #303030;
+    padding: 10px 42px;
+    border-radius: 24px;
+    border-color: #303030;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.main-info button:hover, .main-info button:active{
+  background-color: #504e4e !important;
+  border-color: #504e4e !important;
+  color: #fff;
+}
+
+.description {
+  background-color: white;
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  box-shadow: 2px 2px 0px 1px silver;
+}
+
+.description h3{
+  font-size: 18px;
+  text-align: center;
+  margin: 0px;
+}
+
+.shopper-block{
+  background-color: #fff;
+    box-shadow: 0px 3px 0px 0px silver;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 350px;
+    height: 460px;
+}
+
+.register button{
+  background-color: #f17878;
+  border-color: #f17878;
+}
+
+.register button:hover, .register button:active{
+  background-color: #ee6060 !important;
+  border-color: #ee6060 !important;
+}
+
+.register-block ol{
+  display: flex;
+    justify-content: center;
+    font-weight: 500;
+    height: 70px;
+}
+
+.register-block li{
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

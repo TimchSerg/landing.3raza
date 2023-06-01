@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.margin-block{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.header-block h2{
+  text-align: center;
+  color: blue;
+  font-weight: 500;
+}
+
+.header-block strong{
+  color: #000;
+}
