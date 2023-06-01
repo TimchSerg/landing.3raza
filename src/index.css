@@ -17,6 +17,11 @@ code {
   margin-bottom: 3rem;
 }
 
+.padding-content {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
 .header-block h2{
   text-align: center;
   color: blue;
@@ -25,4 +30,12 @@ code {
 
 .header-block strong{
   color: #000;
+}
+
+.logotype img{
+  width: 150px;
+}
+
+.navbar{
+  border-radius: 16px;
 }

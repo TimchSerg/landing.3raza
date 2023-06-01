@@ -13,12 +13,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header padding-content">
         <Logotype />
         <Navbar className=""/>
       </header>
 
-      <div className="main col-12 margin-block" style={{ 
+      <div className="main col-12 margin-block padding-content" style={{ 
         backgroundImage: `url(${process.env.PUBLIC_URL + '/images/landing-gerl.png'})` 
       }}>
         <div className='main-info col-12 col-md-6'>
@@ -35,14 +35,18 @@ function App() {
         
       </div>
 
-      <div className="description margin-block">
-        
-        <h3>3RAZA - это путеводитель проверенных заведений позволяющий отделить <br />
-        из общего списка те заведения, которые дорожат своими гостями и держат планку качества на высоком уровне.</h3>
-        
+      <div className='padding-content'>
+        <div className="description margin-block">
+          
+          <h3>3RAZA - это путеводитель проверенных заведений позволяющий отделить <br />
+          из общего списка те заведения, которые дорожат своими гостями и держат планку качества на высоком уровне.</h3>
+          
+        </div>
       </div>
 
-      <div className="shopper margin-block pt-5" >
+      
+
+      <div className="shopper margin-block pt-5 padding-content" >
         <div className='header-block'>
           <h2>
             Зачем становиться
@@ -79,8 +83,8 @@ function App() {
         </div>
       </div>
 
-      <div className="register margin-block pt-5" >
-        <div className='header-block d-flex flex-column align-items-center mb-5'>
+      <div className="register margin-block pt-5 padding-content" >
+        <div className='header-block d-flex flex-column align-items-center mb-3'>
           <h2>
             Как стать тайным покупателем?
             <br />
@@ -95,7 +99,7 @@ function App() {
           
         </div>
 
-        <div className='d-flex col-12 justify-content-between flex-wrap'>
+        <div className='d-flex col-12 justify-content-center justify-content-xl-between flex-wrap'>
 
           <div className='register-block col-12 col-md-6 col-xl-4'>
             <ol>
@@ -143,20 +147,22 @@ function App() {
 
       </div>
 
-      <div className="commands margin-block">
+      <div className="commands margin-block padding-content" style={{ 
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/images/landing-mobile.png'})` 
+      }}>
         <div className='commands-info'>
           <h1>Наша команда</h1>
           <h3>Если остались вопросы</h3>
           <p>Всегда поможем разобраться.</p>
 
-          <button className="btn btn-primary">
+          <button>
             Telegram
           </button>
         </div>
         
       </div>
 
-      <footer >
+      <footer className='padding-content'>
         <ul>
           {renderMenu}
         </ul>

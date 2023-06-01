@@ -1,0 +1,75 @@
+  @media screen and (min-width: 576px) { 
+    .register-block-center, .register-block-end, .register-block-start {
+        width: 100% !important;
+      }
+
+      .main {
+        background-position: 90% 5% !important;
+        background-size: contain !important;
+      }
+
+      .commands {
+        background-position: 85% 0% !important;
+        background-size: contain !important;
+      }
+
+      .main-info p{
+        max-width: 300px;
+      }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .App-header {
+        padding: 2rem 3rem !important;
+      }
+
+    
+
+    .main-info h1{
+        font-size: 88px !important;
+        line-height: 85px !important;
+    }
+
+    .register-block-center, .register-block-end, .register-block-start {
+      max-width: 100% !important;
+    }
+    .register-block-start{
+      border-radius: 66px 0px 0px 66px !important;
+    }
+
+    .register-block-center{
+        border-radius: 0px 66px 66px 0px !important;
+    }
+
+    .register-block{
+      align-items: center;
+    }
+
+    .register-block img{
+      max-width: initial !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    .register-block-center{
+        border-radius: 0px !important;
+    }
+
+    .register-block-end{
+        border-radius: 0px 66px 66px 0px !important;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    
+  }
+  
+  @media screen and (min-width: 1620px) {
+
+  }
+  

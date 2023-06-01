@@ -1,6 +1,6 @@
 .App {
   background-color: #f1dfc5ba;
-  padding: 0 5%;
+  /* padding: 0 5%; */
 }
 
 .App-logo {
@@ -10,14 +10,14 @@
 
 .main {
   background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+  background-position: calc(100% + 48px) 80%;
+  background-size: 308px;
 }
 
 .main-info h1{
-  font-size: 88px;
-    color: #f17878;
-    line-height: 85px;
+  font-size: 42px;
+  color: #f17878;
+  line-height: 40px;
 }
 
 .main-info h3{
@@ -28,12 +28,12 @@
 
 .main-info p{
   display: block;
-    max-width: 300px;
+    max-width: 264px;
     line-height: 24px;
     font-size: 18px;
 }
 
-.main-info button, .register button{
+.main-info button, .register button, .commands button{
   font-weight: 500;
     background-color: #303030;
     padding: 10px 42px;
@@ -82,15 +82,83 @@
   border-color: #ee6060 !important;
 }
 
+.register-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-block img{
+  border-radius: 5px;
+  max-width: 294px;
+}
+
 .register-block ol{
   display: flex;
-    justify-content: center;
-    font-weight: 500;
-    height: 70px;
+  justify-content: center;
+  font-weight: 500;
+  height: 70px;
+  margin-top: 2rem;
 }
 
 .register-block li{
   text-align: center;
+}
+
+.register-block-start{
+  padding-bottom: calc(2rem + 1px) !important;
+}
+
+.register-block-center{
+  padding-bottom: calc(2rem + 1px) !important;
+}
+
+.register-block-end{
+
+}
+
+.register-block-center, .register-block-end, .register-block-start {
+  background-color: #fbf9f9;
+  padding: 2rem;
+  box-shadow: 0px 2px 0px silver;
+  display: flex;
+  justify-content: center;
+  border-radius: 66px;
+  /* max-width: 350px; */
+  width: 350px;
+}
+
+.commands {
+  background-repeat: no-repeat;
+  background-position: calc(100% + 48px) 80%;
+  background-size: 308px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.commands-info{
+  font-weight: bold;
+  padding-left: 72px;
+}
+
+.commands-info h1{
+  color: #f17878;
+}
+
+.commands-info h3{
+  font-size: 46px;
+}
+
+.commands button {
+  background-color: #61dafb;
+  border-color: #61dafb;
+  color: #303030;
+}
+
+.commands button:hover, .commands button:active {
+  background-color: #41d2fa;
+  border-color: #41d2fa;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -101,7 +169,8 @@
 
 .App-header {
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 0rem 1rem;
+  justify-content: space-between;
 }
 
 .App-link {
