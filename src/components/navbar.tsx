@@ -1,9 +1,13 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const menuLinks = [
   { id: 1, name: 'Главная', link: '#'},
-  { id: 2, name: 'Регистрация', link: '#'},
-  { id: 3,  name: 'Наша команда', link: '#'}
+  { id: 2, name: 'Регистрация', link: '#register'},
+  { id: 3,  name: 'Наша команда', link: '#commands'}
 ]
 
 interface IProps {
@@ -12,29 +16,23 @@ interface IProps {
 
 {/* <a className="nav-link active" aria-current="page" href="#">Главная</a> */}
 
-export const Navbar: React.FC<IProps> = (props: IProps) => {
-  const render = menuLinks.map( (item) => (
-    <li className="nav-item" key={item.id}>
-      <a className="nav-link" href={`${item.link}`}>{item.name}</a>
-    </li>
-  ) )
+export const NavbarComponent: React.FC<IProps> = (props: IProps) => {
 
   return (
-    <div className="navbar-main">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {render}
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Container>
+        
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#">Главная</Nav.Link>
+            <Nav.Link href="#register">Регистрация</Nav.Link>
+            <Nav.Link href="#commands">Наша команда</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavbarComponent;

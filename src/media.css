@@ -8,10 +8,10 @@
         background-size: contain !important;
       }
 
-      .commands {
+      /* .commands {
         background-position: 85% 0% !important;
         background-size: contain !important;
-      }
+      } */
 
       .main-info p{
         max-width: 300px;
@@ -20,11 +20,17 @@
 
   @media screen and (min-width: 768px) {
 
-    .App-header {
-        padding: 2rem 3rem !important;
-      }
+    .commands-info{
+      padding-left: 72px;
+    }
 
-    
+    .App-header {
+      padding: 2rem 5% !important;
+    }
+
+    .logotype img{
+      width: 224px;
+    }
 
     .main-info h1{
         font-size: 88px !important;
@@ -53,6 +59,18 @@
 
   @media screen and (min-width: 992px) {
 
+    .commands {
+      background-position: calc(100% - 120px) 80% !important;
+      /* background-size: 308px !important; */
+    }
+
+    .navbar{
+      width: 75%;
+    }
+
+    .navbar{
+      border-radius: 35px;
+    }
   }
 
   @media screen and (min-width: 1200px) {

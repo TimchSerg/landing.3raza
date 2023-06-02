@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Navbar, menuLinks } from './components/navbar';
+import { NavbarComponent, menuLinks } from './components/navbar';
 import Logotype from './components/logotype';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header padding-content">
         <Logotype />
-        <Navbar className=""/>
+        <NavbarComponent className=""/>
       </header>
 
       <div className="main col-12 margin-block padding-content" style={{ 
@@ -27,10 +27,11 @@ function App() {
           <p>Главная цель путеводителя - выделить те заведения в городе,
             которые топят за качество, сервис и дорожат своими клиентами.
           </p>
-
-          <button >
-            Подробнее
-          </button>
+          
+          <a href={`#shopper`}>
+            <button > Подробнее </button>
+          </a>
+          
         </div>
         
       </div>
@@ -46,7 +47,7 @@ function App() {
 
       
 
-      <div className="shopper margin-block pt-5 padding-content" >
+      <div className="shopper margin-block pt-5 padding-content" id="shopper">
         <div className='header-block'>
           <h2>
             Зачем становиться
@@ -83,7 +84,7 @@ function App() {
         </div>
       </div>
 
-      <div className="register margin-block pt-5 padding-content" >
+      <div className="register margin-block pt-5 padding-content" id="register">
         <div className='header-block d-flex flex-column align-items-center mb-3'>
           <h2>
             Как стать тайным покупателем?
@@ -149,20 +150,21 @@ function App() {
 
       <div className="commands margin-block padding-content" style={{ 
         backgroundImage: `url(${process.env.PUBLIC_URL + '/images/landing-mobile.png'})` 
-      }}>
+      }} id="commands">
         <div className='commands-info'>
           <h1>Наша команда</h1>
           <h3>Если остались вопросы</h3>
           <p>Всегда поможем разобраться.</p>
 
-          <button>
-            Telegram
-          </button>
+          <a href="https://t.me/+xks27Pc6dCZiZDFi" target="_blank" rel="noopener noreferrer">
+            <button> Telegram </button>
+          </a>
+          
         </div>
         
       </div>
 
-      <footer className='padding-content'>
+      <footer className='footer'>
         <ul>
           {renderMenu}
         </ul>
