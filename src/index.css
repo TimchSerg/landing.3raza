@@ -8,13 +8,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-li{
+.footer li{
   list-style: none;
+}
+
+h1 {
+  font-family: 'MontserratBlack';
+}
+
+h3, h2 {
+  font-family: 'MontserratBold';
+}
+
+p {
+  font-family: 'MontserratRegular';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  background-color: #f1dfc5ba;
 }
 
 .margin-block{

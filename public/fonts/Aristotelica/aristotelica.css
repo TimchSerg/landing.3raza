@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'AristotelicaExpLight';
+    src: url(./Aristotelica-Text-ExtraLight-trial.ttf);
+}
+@font-face {
+    font-family: 'AristotelicaDemiBold';
+    src: url(./Aristotelica-Text-DemiBold-trial.ttf);
+}
+@font-face {
+    font-family: 'AristotelicaRegular';
+    src: url(./Aristotelica-Text-Regular-trial.ttf);
+}
+@font-face {
+    font-family: 'AristotelicaLight';
+    src: url(./Aristotelica-Text-Light-trial.ttf);
+}

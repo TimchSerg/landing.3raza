@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'BitterBold';
+    src: url(./Bitter-Bold.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BitterItalic';
+    src: url(./Bitter-Italic.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BitterRegular';
+    src: url(./Bitter-Regular.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BitterBoldItalic';
+    src: url(./Bitter-BoldItalic.ttf);
+    font-display: swap;
+}
