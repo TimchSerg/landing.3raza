@@ -139,7 +139,7 @@
 
 .commands {
   background-repeat: no-repeat;
-  background-position: calc(100% + 128px) 80%;
+  background-position: calc(100% + 176px) 80%;
   background-size: contain;
   height: 60vh;
   display: flex;
