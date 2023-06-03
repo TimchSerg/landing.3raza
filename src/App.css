@@ -30,9 +30,12 @@
 
 .main-info p{
   display: block;
-    max-width: 264px;
-    line-height: 24px;
-    font-size: 18px;
+  max-width: 252px;
+  line-height: 24px;
+  font-size: 14px;
+  background-color: #f1dfc5de;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .main-info button, .register button, .commands button{
@@ -155,6 +158,13 @@
   font-size: 46px;
 }
 
+.commands-info p{
+  display: block;
+  max-width: 238px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
 .commands button {
   background-color: #61dafb;
   border-color: #61dafb;
@@ -180,6 +190,12 @@
 
 .footer li{
   padding: 0 1.5rem;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer li a{
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
