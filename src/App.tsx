@@ -85,18 +85,12 @@ function App() {
       </div>
 
       <div className="register margin-block pt-5 padding-content" id="register">
-        <div className='header-block d-flex flex-column align-items-center mb-3'>
+        <div className='header-block d-flex flex-column align-items-center'>
           <h2>
             Как стать тайным покупателем?
-            <br />
-            <strong>Регистрация</strong>
+            {/* <br /> */}
+            {/* <strong>Регистрация</strong> */}
           </h2>
-
-          <a href="https://3raza.com" rel="noreferrer" target="_blank">
-            <button className="btn btn-primary">
-              Начать
-            </button>
-          </a>
           
         </div>
 
@@ -142,6 +136,14 @@ function App() {
             <div className='register-block-end'>
               <img src={process.env.PUBLIC_URL + "/images/landing-video.png"} alt="Видео с инструкцией" />
             </div>
+          </div>
+
+          <div className='col-12 d-flex justify-content-center'>
+          <a href="https://3raza.com" rel="noreferrer" target="_blank" className='mt-5'>
+            <button className="btn btn-primary">
+              Начать
+            </button>
+          </a>
           </div>
 
         </div>

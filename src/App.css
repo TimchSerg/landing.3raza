@@ -29,7 +29,7 @@
 }
 
 .main-info p{
-  display: block;
+  display: none;
   max-width: 252px;
   line-height: 24px;
   font-size: 14px;
@@ -84,6 +84,8 @@
 .register button{
   background-color: #f17878;
   border-color: #f17878;
+  width: 214px;
+  font-size: 24px;
 }
 
 .register button:hover, .register button:active{
@@ -112,6 +114,7 @@
 
 .register-block li{
   text-align: center;
+  font-size: 18px;
 }
 
 .register-block-start{
