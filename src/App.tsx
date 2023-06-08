@@ -105,7 +105,7 @@ function App() {
             </ol>
 
             <div className='register-block-start'>
-              <img src={process.env.PUBLIC_URL + "/images/landing-startpage.png"} alt="Главная страница 3RAZA" />
+              <img src={process.env.PUBLIC_URL + "/images/landing-startpage.jpg"} alt="Главная страница 3RAZA" width={288} height={527}/>
             </div>
           </div>
 
